@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex justify-center items-center bg-rose-50 min-h-screen">
+      <div
+        class="flex flex-col md:relative  my-6 md:my-2 md:flex-row justify-center items-center md:items-stretch shadow-xl w-1/2 md:w-full md:max-w-4xl"
+      >
+        <div
+          class="p-6 md:p-24  rounded-3xl md:rounded-r-none  bg-white flex flex-col space-y-8 justify-center items-center w-full md:w-1/2"
+        >
+        <!-- login div -->
+          <div class="flex justify-between w-full">
+            <div class="text-3xl font-bold md:text-left">Log In</div>
+            <div
+              class="h-10 md:absolute md:right-4 md:top-4 w-10 p-1 rounded-full bg-gray-300 flex justify-center items-center hover:-translate-y-0.5 transition duration-180"
+            >
+              <svg
+              
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <path
+                  fill="none"
+                  stroke="currentcolor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m15.5 15.5l-10-10zm0-10l-10 10"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="flex justify-start">Log in to your account to upload or download pictures, videos or music.</div>
+          <input type="text" placeholder="Enter your email address" class="block px-6 py-4  w-full  rounded lg border border-gray-300 placeholder:text-left placeholder:text-gray">
+          <p class="text-center text-cyan-700  w-full">Forgot password</p>
+          <div class="w-full rounded-lg py-6  flex justify-center items-center bg-cyan-700 hover:-translate-y-0.5 hover:bg-cyan-600 transition duration-200 space-x-3">
+            <div class="text-white capitalize">Next</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" d="M3 12.013L20.789 12m-6.776 7L21 12l-6.988-7" stroke-width="1"/></svg>
+          </div>
+          <div class="w-full border border-t-gray-300"></div>
+          <p class="text-center text-sm text-gray-400 w-full">or log in with</p>
+          <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 w-full">
+            <!-- 1st div -->
+            <div class="flex justify-center hover:-translate-y-0.5 hover:border-b-0 hover:bg-opacity-30 hover:shadow-lg hover: items-center border border-gray-300 rounded-lg px-6 py-4 space-x-3">
+              <img class="w-8" src="./images/facebook.png" alt="">
+              <p class="capitalize font-sanserif text-lg">Facebook</p>
+            </div>
+            <!-- 2nd div -->
+             <div class="flex justify-center items-center hover:-translate-y-0.5 hover:border-b-0 hover:shadow-lg hover:bg-opacity-30 border border-gray-300 rounded-lg px-6 py-4 space-x-3">
+              <img class="w-8" src="./images/google.png" alt="">
+              <p class="capitalize font-sanserif text-lg">Google</p>
+            </div>
+          </div>
+        </div>
+        <!-- image div -->
+        
+          <img class="hidden md:block rounded-3xl rounded-l-none w-1/2 object-cover" src="./images/image.jpg" alt="" />
+        
+      </div>
+    </div>
+  </body>
+</html>
